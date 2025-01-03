@@ -3,22 +3,24 @@
     background-color: #f8f9fa;
 }
 .booklist-content{
-    gap: 3rem;
+    gap: 2rem;
 }
-.book-item{
+.book-item-container{
     padding: 3rem 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-radius: 4px;
-    background-color: var(--white-color);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 15px 0px;
-    transition: var(--transition);
+    transition: all 300ms ease-in-out;
 }
-.book-item:hover{
+.book-item-container:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 .book-item-img img{
     max-width: 180px;
     margin-right: auto;
     margin-left: auto;
+    box-shadow: white 0px 5px 15px 0px;
 }
 .book-item-info{
     margin-top: 2rem;

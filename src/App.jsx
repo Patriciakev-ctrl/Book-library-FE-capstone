@@ -8,13 +8,13 @@ import Header from "./components/Header";
 import About from "./components/About";
 import BookCard from "./components/BookCard";
 import BookDetails from "./components/BookDetails";
-import FormConnexion from "./components/FormConnexion";
+
 
 function App() {
 
   return (
     <>
-      <AppProvider>
+      <AppProvider className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Router>
           <Header />
           <Routes>
@@ -24,7 +24,7 @@ function App() {
             <Route path="/bookcard" element={<BookCard/>}/>
             <Route path = "/book" element = {<BookList />} />
             <Route path = "/book/:id" element = {<BookDetails />} />
-            <Route path="/formconnexion" element={<FormConnexion/>}/>
+         
 
         </Routes>
       </Router>

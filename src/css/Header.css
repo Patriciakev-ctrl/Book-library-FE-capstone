@@ -14,8 +14,8 @@ p{
     margin-top: -1.8rem;
     margin-bottom: 2.8rem;
     padding-left: 2rem;
-    opacity: 0.8;
     max-width: 770px;
     z-index: 1;
+    font-weight: bold;
    
 }

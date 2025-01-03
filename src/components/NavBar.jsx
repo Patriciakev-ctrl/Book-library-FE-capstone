@@ -2,7 +2,6 @@ import {  Link } from "react-router-dom";
 import { useState } from "react";
 import logoImg from "../assets/logo.jpg";
 import {HiOutlineMenuAlt3} from "react-icons/hi";
-import DarkModeToggle from "./DarkModeToggle";
 import  "../../src/css/NavBar.css";
 
 function NavBar() {
@@ -11,12 +10,12 @@ function NavBar() {
 
 
     return(
-        <nav className='navbar' id = "navbar">
+        <nav className='navbar ' id = "navbar">
         <div className='container navbar-content flex'>
           <div className='brand-and-toggler flex flex-sb'>
             <Link to = "/" className='navbar-brand flex'>
               <img src = {logoImg} alt = "site logo" />
-              <span className='text-uppercase fw-7 fs-24 ls-1'>bookNook</span>
+              <span className='text-uppercase fw-7 fs-24 ls-1'>BookNook</span>
             </Link>
             <button type = "button" className='navbar-toggler-btn' onClick={handleNavbar}>
               <HiOutlineMenuAlt3 size = {35} style = {{
@@ -36,12 +35,7 @@ function NavBar() {
               <li className='nav-item'>
                 <Link to = "contact" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Contact</Link>
               </li>
-              <li className='nav-item'>
-                <Link to = "formconnexion" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Connexion</Link>
-              </li>
-              <li className='nav-item'>
-                <DarkModeToggle/>
-               </li>
+
             </ul>
           </div>
         </div>

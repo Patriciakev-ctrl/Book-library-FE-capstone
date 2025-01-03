@@ -56,6 +56,8 @@
     }
     .book-details-img{
         padding: 0 6rem 0 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     .book-details-img img{
         max-width: 100%;

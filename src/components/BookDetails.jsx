@@ -25,13 +25,13 @@ const BookDetails = () => {
         if(data){
           const {description, title, covers, ISBN, publish_date, number_of_pages, subjects} = data;
           const newBook = {
-            description: description ? description.value : "No description found",
+            description: description ? description : "No description found",
             title: title,
             cover_img: covers ? `https://covers.openlibrary.org/b/id/${covers[0]}-L.jpg` : coverImg,
-            ISBN: ISBN ? ISBN.join(", ") : "No ISBN found",
-            publish_date : publish_date ? publish_date.join(", ") : "No publish date found",
-            number_of_pages : number_of_pages ? number_of_pages.join(", ") : "No number of pages found",
-            subjects: subjects ? subjects.join(", ") : "No subjects found"
+            ISBN: ISBN.join(", ") ? ISBN : "No ISBN found",
+            publish_date : publish_date.join(", ") ? publish_date : "No publish date found",
+            number_of_pages : number_of_pages.join(", ") ? number_of_pages : "No number of pages found",
+            subjects: subjects ? subjects[0].join(", ") : "No subjects found"
           };
           setBook(newBook);
         } else {
@@ -56,8 +56,8 @@ const BookDetails = () => {
           <span className='fs-18 fw-6'>Go Back</span>
         </button>
 
-        <div className='book-details-content grid'>
-          <div className='book-details-img'>
+        <div className='book-details-content grid bg-cyan-100'>
+          <div className='book-details-img mt-6 mb-6'>
             <img src = {book?.cover_img} alt = "cover img" />
           </div>
           <div className='book-details-info'>
@@ -72,7 +72,7 @@ const BookDetails = () => {
               <span className='text-italic'>{book?.publish_date}</span>
             </div>
             <div className='book-details-item'>
-              <span className='fw-6'>Number of Page: </span>
+              <span className='fw-6'>Number of Pages: </span>
               <span className='text-italic'>{book?.number_of_pages}</span>
             </div>
             <div className='book-details-item'>

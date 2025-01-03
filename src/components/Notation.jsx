@@ -26,7 +26,7 @@ function Notation() {
               ))}
               <br/>
               <br />
-              <p>Notation: {rating} on 5</p>
+              {/* <p>Notation: {rating} on 5</p> */}
             </div>
           );
         

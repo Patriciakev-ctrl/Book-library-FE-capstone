@@ -24,14 +24,14 @@ const SearchBar= () => {
   };
 
   return (
-    <div className='search-form'>
+    <div className='search-form '>
       <div className='container'>
         <div className='search-form-content'>
           <form className='search-form' onSubmit={handleSubmit}>
-            <div className='search-form-elem flex flex-sb bg-white'>
-              <input type = "text" className='form-control' placeholder='The Lost World ...' ref = {searchText} />
+            <div className='search-form-elem flex flex-sb bg-cyan-100 '>
+              <input type = "text" className='form-control focus:outline-none focus:ring-0 bg-cyan-100 ' placeholder='The Lost World ...' ref = {searchText} />
               <button type = "submit" className='flex flex-c' onClick={handleSubmit}>
-                <FaSearch className='text-purple' size = {32} />
+                <FaSearch className='text-center' size = {62} />
               </button>
             </div>
           </form>
