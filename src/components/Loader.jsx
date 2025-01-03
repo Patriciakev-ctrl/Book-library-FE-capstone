@@ -5,7 +5,7 @@ import "../css/Loader.css";
 const Loader = () => {
   return (
     <div className='loader flex flex-c'>
-      <img src = {LoaderImg} alt = "loader" />
+      <img className='justify-center' src = {LoaderImg} alt = "loader" />
     </div>
   )
 }

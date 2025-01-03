@@ -14,9 +14,10 @@
 span{
     font-weight: bold;
 }
-
-.content h1 {
+ h1 {
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 3.2rem;
 }
 
 /* Responsive Styles */

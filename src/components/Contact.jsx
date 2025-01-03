@@ -1,3 +1,5 @@
+import {  } from "../css/Contact.css";
+
 function Contact() {
     return(
         <div > 
