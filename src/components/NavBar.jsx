@@ -2,6 +2,7 @@ import {  Link } from "react-router-dom";
 import { useState } from "react";
 import logoImg from "../assets/logo.jpg";
 import {HiOutlineMenuAlt3} from "react-icons/hi";
+import DarkModeToggle from "./DarkModeToggle";
 import  "../../src/css/NavBar.css";
 
 function NavBar() {
@@ -38,6 +39,9 @@ function NavBar() {
               <li className='nav-item'>
                 <Link to = "formconnexion" className='nav-link text-uppercase text-white fs-22 fw-6 ls-1'>Connexion</Link>
               </li>
+              <li className='nav-item'>
+                <DarkModeToggle/>
+               </li>
             </ul>
           </div>
         </div>
