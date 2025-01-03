@@ -1,9 +1,11 @@
+import  "../css/About.css";
+
 function About() {
     return(
-       <div>
+       <div className=" content">
             <h1>About BookNook App</h1>
 
-            <p>
+            <p className="section">
             
 
 Welcome to <span >BookNook</span>!
@@ -15,8 +17,9 @@ Whether you're a lifelong bookworm or just beginning your literary journey, <spa
 We believe that every story deserves to be heard, and every reader deserves the chance to explore new worlds, ideas, and perspectives. Join us as we celebrate the joy of reading and foster a vibrant community of book lovers. Let's embark on this literary adventure together!
 
 Happy reading!
+<br/>
 
-The <span >BookNook Team</span>
+<span>The BookNook Team</span>
             </p>
 
 

@@ -3,19 +3,31 @@
     background:  url("../../src/assets/girl-reading.jpg") center/cover no-repeat;
     flex-direction: column;
     z-index: 0;
+   
     
 }
-h1{
+.title{
     font-size: 4.2rem;
     z-index: 1;
     text-align: center;
 }
-p{
-    margin-top: -1.8rem;
+.description{
     margin-bottom: 2.8rem;
-    padding-left: 2rem;
     max-width: 770px;
     z-index: 1;
-    font-weight: bold;
-   
+    color: solid black;
+    
+}
+@media (max-width: 768px) {
+    .header-container {
+        background-image: url('../assets/Untitled design.png');
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+
+    .header-container{
+        margin-top: -4px;
+    }
 }
