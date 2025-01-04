@@ -13,7 +13,7 @@
     margin-left: 1rem;
 }
 .book-details-content{
-    gap: 4rem;
+    gap: 6rem;
 }
 .book-details-img{
     max-height: 600px;
@@ -48,7 +48,7 @@
     outline: -1px solid slategray;
     border-radius: 8px;
 }
-
+/*Responsive style*/
 @media screen and (min-width: 768px){
     .book-details-content{
         grid-template-columns: 40% 60%;
