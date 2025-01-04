@@ -39,7 +39,7 @@
     font-style: italic;
     font-size: 14px;
 }
-
+/*Responsive style for the booklist container*/
 @media screen and (min-width: 600px){
     .booklist-content{
         grid-template-columns: repeat(2, 1fr);

@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { useGlobalContext } from '../context.jsx';
 import "../css/SearchBar.css";
 
+//implementing the SearchBar to fetch books from the API
+
 const SearchBar= () => {
   const {setSearchTerm, setResultTitle} = useGlobalContext();
   const searchText = useRef('');
@@ -16,7 +18,8 @@ const SearchBar= () => {
     if((tempSearchTerm.replace(/[^\w\s]/gi,"")).length === 0){
       setSearchTerm("the lost world");
       setResultTitle("Please Enter Something ...");
-    } else {
+    } 
+    else {
       setSearchTerm(searchText.current.value);
     }
 
@@ -38,7 +41,7 @@ const SearchBar= () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default SearchBar;

@@ -2,6 +2,7 @@ import NavBar from "./NavBar";
 import SearchBar from "./SearchBar";
 import  "../../src/css/Header.css";
 
+//implement a header with a navbar, a description text and a searchbar
 function Header() {
     return( 
     <> 

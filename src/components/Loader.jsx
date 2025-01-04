@@ -1,7 +1,8 @@
 import React from 'react';
-import LoaderImg from "../assets/bouncing-circles.svg";
 import "../css/Loader.css";
+import LoaderImg from "../assets/bouncing-circles.svg";
 
+//This component should be display to show the loading evolution
 const Loader = () => {
   return (
     <div className='loader flex flex-c'>
@@ -10,4 +11,4 @@ const Loader = () => {
   )
 }
 
-export default Loader
+export default Loader;

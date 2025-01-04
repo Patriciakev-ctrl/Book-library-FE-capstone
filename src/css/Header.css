@@ -3,8 +3,6 @@
     background:  url("../../src/assets/girl-reading.jpg") center/cover no-repeat;
     flex-direction: column;
     z-index: 0;
-   
-    
 }
 .header-title{
     font-size: 3.2rem;
@@ -20,7 +18,7 @@
 }
 @media (max-width: 768px) {
     .header-container {
-        background-image: url('../assets/Untitled design.png');
+        background-image: url('../assets/girl-reading-phone.jpg');
     }
    
     .header-container{

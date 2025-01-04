@@ -5,7 +5,7 @@ import Loading from "./Loader";
 import coverImg from "../assets/cover-not-found.jpg";
 import "../css/BookList.css";
 
-
+//Fetch bookCards to presents a list of books
 const BookList = () => {
   const {books, loading, resultTitle} = useGlobalContext();
   const booksWithCovers = books.map((singleBook) => {
