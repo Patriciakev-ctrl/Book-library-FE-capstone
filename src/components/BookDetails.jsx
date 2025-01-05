@@ -6,7 +6,7 @@ import {FaArrowLeft} from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import "../css/BookDetails.css";
 
-const URL = "openlibrary.org/works/";
+const URL = "https://openlibrary.org/works/";
 
 //this components will show more details about the app
 
